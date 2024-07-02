@@ -1,24 +1,25 @@
+*Forked from [Calimerorulez/QlockTwo_DIY](https://github.com/Calimerorulez/QlockTwo_DIY), since it is the most recent fork of the original.*<br>
+
 # QlockTwo DIY
-*Project by Jonas Lauener and Frederic Letsch*
+*Original Project by Jonas Lauener and Frederic Letsch [@JoLau](https://github.com/jolau/), original repo via [(Wayback Machine)](https://web.archive.org/web/20221228163409/https://github.com/jolau/QlockTwo_DIY/)<br>
+Please visit the [original-jolau](https://github.com/exiom-xyz/QlockTwo_DIY/tree/original-jolau) branch for a backup of the original files and description, the master branch will from here on contain my own adaptation for 3D Printing and Laser, original content will slowly be replaced.*<br><br>
 
-As we could not afford the hefty price tag of the original QlockTwo Classic, our aim was to build a perfect copy of it. Over the course of two years we built five units for us and our parents. In the spirit of the open source community we would like to enable everyone to build their own perfect QlockTwo.
 
-**For any technical questions, please open an issue: https://github.com/jolau/QlockTwo_DIY/issues/new/choose**
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons (4.0 International License)
+Attribution—Noncommercial—Share Alike</a>.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
-<img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080219.jpg" width="30%"></img> <img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080262.jpg" width="30%"></img> <img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080293.jpg" width="30%"></img> <img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080243.jpg" width="30%"></img> <img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080252.jpg" width="30%"></img> <img src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/docs/images/P1080278.jpg" width="30%"></img> 
+<img src="docs/images/P1080219.jpg" width="30%"></img> <img src="docs/images/P1080262.jpg" width="30%"></img> <img src="docs/images/P1080293.jpg" width="30%"></img> <img src="docs/images/P1080243.jpg" width="30%"></img> <img src="docs/images/P1080252.jpg" width="30%"></img> <img src="docs/images/P1080278.jpg" width="30%"></img> 
 
 ## Front Panel
 The front panel is a complete reproduction of the original QlockTwo panel in terms of proportions, font and words. Due to copyright issues we only provide an Ilustrater template here. It should be easy tough to replace the letters to get the version you want. As raw material for the front plate we used an acrylic glass with a thin black color film on the back side, where we engraved the letters with a laser cutter. (TG4-400 https://www.gravurmaterialien.ch/gravurmaterial/acrylglas/troglass-reverse.html)
 <p align="center">
-  <img width="400" height="400" src="https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/front/Qlocktwo_blank-1.png">
+  <img width="400" height="400" src="front/Qlocktwo_blank-1.png">
 </p>
 
 ## Baseplate
 The dimensions of the clock were derived from the distance betweend to LEDs on a strip (33.3 mm) such that the proportions of our front panel matches the original ones. Since we had access to a CNC milling machine, we designed a unibody to hold our LEDs and the front panel. If you don't have access to a milling machine, you may slice the CAD file in layers to use a laser cutter and some glue instead.
 To avoid the LEDs shining trough to other letter we build a pattern using a laser cutter to shield the LEDs. The front panel is held in place by magnets in the baseplate and metal discs glued to the front panel. This enabels a seamless and easy mount of the front panel.
-![cad_overview](https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/CAD%20files/001_000002_00_A_Qlocktwo_Assembly_VersionSchale.png)
+![cad_overview](CAD%20files/001_000002_00_A_Qlocktwo_Assembly_VersionSchale.png)
 
 ## Electronics
 ### Used parts
@@ -32,12 +33,12 @@ To avoid the LEDs shining trough to other letter we build a pattern using a lase
 
 ### Schematics
 The schematics are fairly simple. We realised it on a stripboard.
-![schematics](https://raw.githubusercontent.com/jolau/QlockTwo_DIY/master/schematics/QlockTwo_Wemos_schem.png) 
+![schematics](schematics/QlockTwo_Wemos_schem.png) 
 Only the voltage level shifter is to be remarked. As the LED strip are on a 5V level and the ESP8266 has 3V3, a voltage level shifter is implemented to shift the signal from 3V3 to 5V.
 
 ### Internal Pictures
-<img src="https://github.com/jolau/QlockTwo_DIY/blob/master/docs/images/IMG_20220517_234625.jpg?raw=true" width="38.5%"></img> <img src="https://github.com/jolau/QlockTwo_DIY/blob/master/docs/images/IMG_20220517_234705.jpg?raw=true" width="38.5%"></img> 
-<img src="https://github.com/jolau/QlockTwo_DIY/blob/master/docs/images/IMG_20220517_234609.jpg?raw=true" width="30%"></img> <img src="https://github.com/jolau/QlockTwo_DIY/blob/master/docs/images/IMG_20220517_234429.jpg?raw=true" width="30%"></img> <img src="https://github.com/jolau/QlockTwo_DIY/blob/master/docs/images/IMG_20220517_234451.jpg?raw=true" width="16.85%"></img> 
+<img src="docs/images/IMG_20220517_234625.jpg?raw=true" width="38.5%"></img> <img src="docs/images/IMG_20220517_234705.jpg?raw=true" width="38.5%"></img> 
+<img src="docs/images/IMG_20220517_234609.jpg?raw=true" width="30%"></img> <img src="docs/images/IMG_20220517_234429.jpg?raw=true" width="30%"></img> <img src="docs/images/IMG_20220517_234451.jpg?raw=true" width="16.85%"></img> 
 
 ## Software
 The ESP8266 is programed with the Arduino platform by PlatformIO. Many thanks to all the incredibles Arduino libraries.
